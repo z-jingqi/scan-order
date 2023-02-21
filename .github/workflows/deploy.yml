@@ -20,15 +20,18 @@ jobs:
       run: |
         cd dist
         git init
-        git add -A
-        git config --local user.email "763297515@qq.com"
-        git config --local user.name "jingqi"
-        git commit -m 'deploy'
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git status
+        git remote add origin https://github.com/z-jingqi/scan-order.git
+        git checkout -b gh-pages
+        git add --all
+        git commit -m "deploy to Github pages"
 
     - name: Force push to destination branch
       uses: ad-m/github-push-action@v0.6.0
       with:
-        github_token: ${{ github.token }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
         force: true
-        directory: ./dist
+        directory: 'dist'
