@@ -1,9 +1,9 @@
 import { makeAutoObservable } from "mobx";
-import { Category, Dish } from "../schema";
+import { Category, Product } from "../schema";
 
 export interface OrderStore {
   categories: Category[];
-  dishes: Dish[];
+  dishes: Product[];
 }
 
 const orderStore = () => {
