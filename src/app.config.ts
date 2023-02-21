@@ -1,6 +1,6 @@
 export default defineAppConfig({
   pages: [
-    "pages/index/index",
+    "pages/index/Index",
     "pages/ordering/Ordering",
     "pages/orders/Orders",
     "pages/mine/Mine",
