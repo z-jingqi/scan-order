@@ -5,7 +5,5 @@ module.exports = {
   defineConstants: {
   },
   mini: {},
-  h5: {
-    publicPath: '/scan-order',
-  }
+  h5: {}
 }

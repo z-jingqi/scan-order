@@ -47,7 +47,7 @@ const config = {
     }
   },
   h5: {
-    publicPath: '/',
+    publicPath: '/scan-order',
     staticDirectory: 'static',
     postcss: {
       autoprefixer: {
