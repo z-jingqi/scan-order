@@ -1,10 +1,12 @@
 import { createContext, useContext } from "react";
+import categoryStore from "./categoryStore";
 import indexStore from "./indexStore";
-import orderStore from "./orderStore";
+import orderingStore from "./orderingStore";
 
 const rootStore = {
   indexStore: indexStore(),
-  orderStore: orderStore(),
+  orderingStore: orderingStore(),
+  categoryStore: categoryStore(),
 };
 
 export const RootStoreContext = createContext(rootStore);

@@ -1,14 +1,16 @@
 // import React from "react";
-import { View, Text, ScrollView } from '@tarojs/components';
+import { View, ScrollView } from '@tarojs/components';
 import { observer } from 'mobx-react';
-import { useStore } from "../../../../stores";
-import { CategoryItem } from './CategoryItem';
+import React from 'react';
+import { useStore } from '../../../../stores';
+import CategoryItem from './CategoryItem';
 
 
-const CategoryList = () => {
-  const { orderStore } = useStore();
 
-  const { categories } = orderStore;
+const CategoryList: React.FC<{}> = () => {
+
+  const { categoryStore } = useStore();
+  const { categories } = categoryStore;
 
   return (
     <View>

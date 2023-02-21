@@ -1,0 +1,29 @@
+.ordering-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ordering-view {
+  flex: 1
+}
+
+.ordering-category-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 20%;
+  flex-shrink: 0;
+  max-width: 150px;
+  background-color: #f5f5f5;
+}
+
+.ordering-product-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

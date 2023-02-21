@@ -4,7 +4,7 @@ export interface Category {
   id: string;
   name: string;
   type: CategoryType;
-  storeId: string;
-  indexNo: number;
+  storeId?: string;
+  indexNo?: number;
   icon?: string;
 }

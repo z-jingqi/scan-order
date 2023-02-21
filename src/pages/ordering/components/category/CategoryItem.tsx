@@ -1,14 +1,35 @@
-import { View } from "@tarojs/components";
-import React from "react"
-import { Category } from "../../../../schema"
+import { View, Text } from "@tarojs/components";
+import React, { useEffect, useState } from "react"
+import cx from 'classnames';
+import { Category } from "../../../../schema";
+
+import './CategoryItem.scss';
+import { useStore } from "../../../../stores";
 
 interface Props {
   category: Category
 }
 
-export const CategoryItem: React.FC<Props> = (props) => {
+const CategoryItem: React.FC<Props> = (props) => {
+
   const { category } = props;
+
+  const { categoryStore } = useStore();
+
+  const [selected, setSelected] = useState(false);
+
+  useEffect(() => {
+    const isSelected = categoryStore.selectedCategoryId === category.id;
+    setSelected(isSelected);
+  }, [category.id, categoryStore.selectedCategoryId]);
+
   return (
-    <View>{category.name}</View>
+    <View className={cx('category-item', selected && 'selected')}>
+      <View className='category-item-wrapper'>
+        <Text>{category.name}</Text>
+      </View>
+    </View>
   );
 }
+
+export default CategoryItem;
