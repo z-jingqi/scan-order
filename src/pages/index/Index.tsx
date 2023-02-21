@@ -2,8 +2,6 @@ import React from 'react'
 import { View, Text } from '@tarojs/components'
 import { observer } from 'mobx-react'
 
-import './index.scss'
-
 const Index: React.FC<{}> = () => {
   return (
     <View className='index'>

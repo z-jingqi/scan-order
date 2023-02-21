@@ -6,7 +6,7 @@ import { observer } from 'mobx-react'
  */
 const Ordering: React.FC<{}> = () => {
   return (
-    <View className='index'>
+    <View>
       <Text>点餐</Text>
     </View>
   );
