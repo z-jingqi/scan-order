@@ -25,9 +25,7 @@ const CategoryItem: React.FC<Props> = (props) => {
 
   return (
     <View className={cx('category-item', selected && 'selected')}>
-      <View className='category-item-wrapper'>
         <Text>{category.name}</Text>
-      </View>
     </View>
   );
 }

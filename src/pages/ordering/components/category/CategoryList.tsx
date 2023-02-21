@@ -1,11 +1,11 @@
 // import React from "react";
-import { View, ScrollView } from '@tarojs/components';
+import { ScrollView } from '@tarojs/components';
 import { observer } from 'mobx-react';
 import React from 'react';
 import { useStore } from '../../../../stores';
 import CategoryItem from './CategoryItem';
 
-
+import './CategoryList.scss';
 
 const CategoryList: React.FC<{}> = () => {
 
@@ -13,11 +13,9 @@ const CategoryList: React.FC<{}> = () => {
   const { categories } = categoryStore;
 
   return (
-    <View>
-      <ScrollView>
-        {categories.map((category) => <CategoryItem key={category.id} category={category} />)}
-      </ScrollView>
-    </View>
+    <ScrollView className='category-list-scroll' showScrollbar={false} scrollY>
+      {categories.map((category) => <CategoryItem key={category.id} category={category} />)}
+    </ScrollView>
   );
 }
 

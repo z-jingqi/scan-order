@@ -1,14 +1,13 @@
-$horizontal-gap: 10px;
-$vertical-gap: 5px;
+$horizontal-gap: 20px;
+$vertical-gap: 30px;
 
 .category-item {
-  font-size: 14px;
+  font-size: 25px;
   padding: $vertical-gap $horizontal-gap;
+  color: #aaa;
 
   &.selected {
-    .category-item-wrapper {
-      background-color: #ccc;
-      border-radius: 0 1rem 1rem 0;
-    }
+    color: #000;
+    border-right: 1px solid #000;
   }
 }

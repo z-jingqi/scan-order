@@ -1,5 +1,5 @@
 import { makeAutoObservable } from "mobx";
-import { categories } from "../mocks/category";
+import { categories } from "../mocks/categories";
 import { Category, Product } from "../schema";
 
 export interface OrderStore {}

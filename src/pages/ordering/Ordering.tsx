@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from '@tarojs/components';
 import { observer } from 'mobx-react';
-import { CategoryList } from './components';
+import { CategoryList, ProductList } from './components';
 
 import './Ordering.scss';
 /**
@@ -14,7 +14,9 @@ const Ordering: React.FC<{}> = () => {
       <View className='ordering-category-list'>
         <CategoryList />
       </View>
-      <View className='ordering-product-list'></View>
+      <View className='ordering-product-list'>
+        <ProductList />
+      </View>
     </View>
   );
 }
