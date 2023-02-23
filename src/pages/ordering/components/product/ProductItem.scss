@@ -3,11 +3,17 @@
   align-items: flex-start;
 
   .product-image {
-    width: 150px;
+    width: 200px;
+    height: 200px;
     flex-shrink: 0;
+
+    image {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .product-info {
-    flex: 1
+    flex: 1;
   }
 }

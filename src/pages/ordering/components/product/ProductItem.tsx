@@ -2,7 +2,7 @@ import { View, Text, Button, Icon, Image } from "@tarojs/components"
 import React from "react";
 import { Product } from "../../../../schema";
 
-import defaultImage from "../../../../../assets/images/default.webp";
+import defaultImage from "../../../../assets/default.jpg";
 
 import "./ProductItem.scss"
 
@@ -17,7 +17,7 @@ const ProductItem: React.FC<Props> = (props) => {
     return (
         <View className='product-item'>
             <View className='product-image'>
-                <Image mode='scaleToFill' src={defaultImage} />
+                <Image mode='aspectFit' src={defaultImage} />
             </View>
             <View className='product-info'>
                 <Text>{product.name}</Text>
