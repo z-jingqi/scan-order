@@ -1,20 +1,21 @@
-import { ScrollView } from "@tarojs/components";
-import { useStore } from '../../../../stores';
+import { View } from "@tarojs/components";
+import React from "react";
+import { Product } from "../../../../schema";
 import ProductItem from "./ProductItem";
 
-import './ProductList.scss'
+interface Props {
+    products: Product[]
+}
 
-const ProductList = () => {
+const ProductList: React.FC<Props> = (props) => {
 
-    const { productStore } = useStore();
-
-    const { products } = productStore;
+    const { products } = props;
 
     return (
-        <ScrollView className='product-list-scroll' showScrollbar={false} scrollY>
+        <View>
             {products.map(product => <ProductItem key={product.id} product={product} />)}
-        </ScrollView>
-    );
+        </View>
+    )
 }
 
 export default ProductList;

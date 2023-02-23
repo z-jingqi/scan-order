@@ -4,7 +4,7 @@ import { observer } from 'mobx-react'
 /**
  * 
  */
-const Mine: React.FC<{}> = () => {
+const User: React.FC<{}> = () => {
   return (
     <View>
       <Text>我的</Text>
@@ -12,4 +12,4 @@ const Mine: React.FC<{}> = () => {
   );
 }
 
-export default observer(Mine)
+export default observer(User)

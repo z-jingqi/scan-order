@@ -2,108 +2,35 @@ import { Category } from "../schema";
 
 export const categories: Category[] = [
   {
-    id: "1",
-    name: "当季热销start",
-    type: "base",
+    id: "huncai",
+    name: "荤菜",
   },
   {
-    id: "2",
-    name: "爆款推荐",
-    type: "base",
+    id: "sucai",
+    name: "素菜",
   },
   {
-    id: "3",
-    name: "甜点",
-    type: "base",
+    id: "guodi",
+    name: "锅底",
   },
   {
-    id: "4",
+    id: "xiaochi",
     name: "小吃",
-    type: "base",
   },
   {
-    id: "5",
-    name: "饮料",
-    type: "base",
+    id: "cate-one",
+    name: "分类一",
   },
   {
-    id: "6",
-    name: "清热系列",
-    type: "base",
+    id: "cate-two",
+    name: "分类二",
   },
   {
-    id: "7",
-    name: "爽口系列",
-    type: "base",
-  }, {
-    id: "5",
-    name: "饮料",
-    type: "base",
+    id: "cate-three",
+    name: "分类三",
   },
   {
-    id: "6",
-    name: "清热系列",
-    type: "base",
-  },
-  {
-    id: "7",
-    name: "爽口系列",
-    type: "base",
-  }, {
-    id: "5",
-    name: "饮料",
-    type: "base",
-  },
-  {
-    id: "6",
-    name: "清热系列",
-    type: "base",
-  },
-  {
-    id: "7",
-    name: "爽口系列",
-    type: "base",
-  }, {
-    id: "5",
-    name: "饮料",
-    type: "base",
-  },
-  {
-    id: "6",
-    name: "清热系列",
-    type: "base",
-  },
-  {
-    id: "7",
-    name: "爽口系列",
-    type: "base",
-  },{
-    id: "5",
-    name: "饮料",
-    type: "base",
-  },
-  {
-    id: "6",
-    name: "清热系列",
-    type: "base",
-  },
-  {
-    id: "7",
-    name: "爽口系列",
-    type: "base",
-  },{
-    id: "5",
-    name: "饮料",
-    type: "base",
-  },
-  {
-    id: "6",
-    name: "清热系列",
-    type: "base",
-  },
-  {
-    id: "7",
-    name: "爽口系列end",
-    type: "base",
+    id: "cate-four",
+    name: "分类四",
   },
 ];

@@ -7,5 +7,6 @@ export * from "./image-store";
 export * from "./modifier-option";
 export * from "./modifier";
 export * from "./product-category";
+export * from "./product-group";
 export * from "./product";
 export * from "./unit";
