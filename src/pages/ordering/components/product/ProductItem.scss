@@ -1,8 +1,11 @@
 .product-item {
   display: flex;
   align-items: flex-start;
+  column-gap: 30px;
 
   .product-image {
+    display: flex;
+    align-items: flex-start;
     width: 200px;
     height: 200px;
     flex-shrink: 0;
@@ -14,6 +17,110 @@
   }
 
   .product-info {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    min-height: 200px;
+
+    .product-name {
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .product-item-price {
+      display: flex;
+      align-items: center;
+      height: 45px;
+
+      .price-symbol {
+        font-size: 25px;
+        font-weight: bolder;
+        margin-right: 5px;
+      }
+
+      .product-price {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      .product-qty-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+
+        .qty-button {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f90;
+          color: #fff;
+          padding: 0;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          font-size: 40px;
+          margin: 0;
+        }
+
+        .add-button {
+          &::before {
+            display: inline-block;
+            position: absolute;
+            border-radius: 5px;
+            width: 60%;
+            top: 50%;
+            content: '';
+            height: 5px;
+            background-color: #fff;
+            transform: translateY(-50%);
+            border: none;
+          }
+
+          &::after {
+            display: inline-block;
+            position: absolute;
+            border-radius: 5px;
+            width: 60%;
+            top: 50%;
+            left: 50%;
+            content: '';
+            height: 5px;
+            background-color: #fff;
+            transform: translate(-50%, -50%) rotate(90deg);
+            transform-origin: center;
+            border: none;
+          }
+        }
+
+        .reduce-button {
+          &::before {
+            display: inline-block;
+            position: absolute;
+            border-radius: 5px;
+            width: 60%;
+            top: 50%;
+            content: '';
+            height: 5px;
+            background-color: #fff;
+            transform: translateY(-50%);
+            border: none;
+          }
+        }
+
+        .product-qty {
+          display: inline-block;
+          text-align: center;
+          min-width: 50px;
+          font-size: 30px;
+          color: rgb(0 0 0 / .84);
+        }
+      }
+    }
+
+    .spacer {
+      flex: 1;
+    }
   }
 }

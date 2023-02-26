@@ -1,3 +1,7 @@
 .product-group-list-scroll {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
   height: 100%;
+  box-sizing: border-box;
 }

@@ -1,0 +1,29 @@
+.shopping-cart {
+    height: 100%;
+}
+
+.simple-cart {
+    display: flex;
+    height: 100%;
+    background-color: #f5f5f5;
+
+    .cart-price-info {
+        flex: 1;
+    }
+
+    .checkout-button {
+        width: 150px;
+        flex-shrink: 0;
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 35px;
+            border-radius: 0;
+            background-color: #f90;
+            height: 100%;
+        }
+    }
+}

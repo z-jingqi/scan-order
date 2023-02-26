@@ -1,9 +1,9 @@
 import { makeAutoObservable } from "mobx";
 
-const indexStore = () => {
-  return makeAutoObservable({
+class IndexStore {
+  constructor() {
+    makeAutoObservable(this);
+  }
+}
 
-  });
-};
-
-export default indexStore;
+export default IndexStore;

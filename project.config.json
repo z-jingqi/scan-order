@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "scan-order",
   "description": "扫码点餐",
-  "appid": "touristappid",
+  "appid": "wxb2e42d978f595b60",
   "setting": {
     "urlCheck": true,
     "es6": false,

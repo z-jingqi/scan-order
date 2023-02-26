@@ -1,4 +1,11 @@
 .product-group-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
+
+  .product-group-name {
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px 0;
+  }
 }

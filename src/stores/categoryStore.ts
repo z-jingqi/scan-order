@@ -1,19 +1,19 @@
-import { makeAutoObservable } from "mobx";
+import { action, makeAutoObservable, observable } from "mobx";
 import { categories } from "../mocks/categories";
 import { Category } from "../schema";
 
-export interface CategoryStore {
-  categories: Category[];
-  selectedCategoryId?: string;
+class CategoryStore {
+  constructor() {
+    makeAutoObservable(this);
+  }
+
+  @observable categories: Category[] = categories;
+  @observable selectedCategoryId: string;
+
+  @action
+  selectCategory(categoryId: string) {
+    this.selectedCategoryId = categoryId;
+  }
 }
 
-const categoryStore = () => {
-  const store: CategoryStore = {
-    categories: categories,
-    selectedCategoryId: "4",
-  };
-
-  return makeAutoObservable(store);
-};
-
-export default categoryStore;
+export default CategoryStore;

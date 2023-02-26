@@ -1,6 +1,11 @@
 .ordering-container {
-  display: flex;
   height: 100vh;
+  overflow: hidden;
+}
+
+.ordering-list {
+  display: flex;
+  height: calc(100% - 100px);
   overflow: hidden;
 }
 
@@ -25,4 +30,8 @@
   height: 100%;
   overflow: hidden;
   flex: 1;
+}
+
+.shopping-cart {
+  height: 100px;
 }
