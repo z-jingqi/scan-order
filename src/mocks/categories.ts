@@ -33,4 +33,8 @@ export const categories: Category[] = [
     id: "cate-four",
     name: "分类四",
   },
+  {
+    id: "combo",
+    name: "套餐",
+  },
 ];

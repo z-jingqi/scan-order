@@ -331,4 +331,35 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "p31",
+    name: "套餐",
+    combo: {
+      id: "",
+      productId: "",
+      totalPrice: 20,
+      comboGroups: [
+        {
+          name: "套餐分组A",
+          comboGroupRule: {
+            type: "must",
+            maxCount: 3,
+          },
+          comboGroupItems: [
+            {
+              productName: "商品A",
+              productPrice: 4,
+            },
+          ],
+        },
+      ],
+    },
+    type: "combo",
+    productCategory: [
+      {
+        categoryId: "combo",
+        categoryType: "base",
+      },
+    ],
+  },
 ];
