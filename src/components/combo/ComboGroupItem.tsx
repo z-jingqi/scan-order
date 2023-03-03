@@ -6,10 +6,10 @@ interface Props {
   comboGroupItem: ComboGroupItem
 }
 
-const ComboGroupItem: React.FC<Props> = (props) => {
+const ComboProductGroupItem: React.FC<Props> = (props) => {
   const { comboGroupItem } = props;
   const { } = comboGroupItem;
   return (<View />);
 }
 
-export default ComboGroupItem;
+export default ComboProductGroupItem;

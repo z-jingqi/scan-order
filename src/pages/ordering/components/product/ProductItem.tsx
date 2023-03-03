@@ -21,6 +21,8 @@ const ProductItem: React.FC<Props> = (props) => {
     setQty(newQty);
   };
 
+  const CustomizedButton = () => (<Button className='customized-button'>选规格</Button>);
+
   const AddButton = () => (
     <Button
       onClick={() => setProductQty(1)}
@@ -36,6 +38,9 @@ const ProductItem: React.FC<Props> = (props) => {
   );
 
   const getButtonGroup = () => {
+    if (product.type === 'combo') {
+      return <CustomizedButton />
+    }
     if (!qty) {
       return <AddButton />;
     }

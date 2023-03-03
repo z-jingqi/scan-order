@@ -7,7 +7,7 @@ interface Props {
   combo: Combo
 }
 
-const Combo: React.FC<Props> = (props) => {
+const ComboProduct: React.FC<Props> = (props) => {
   const { combo } = props;
   const { comboGroups } = combo;
 
@@ -19,4 +19,4 @@ const Combo: React.FC<Props> = (props) => {
 
 }
 
-export default Combo;
+export default ComboProduct;

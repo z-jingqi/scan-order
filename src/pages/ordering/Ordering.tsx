@@ -4,6 +4,7 @@ import { observer } from "mobx-react";
 import { CategoryList, ProductGroupList, ShoppingCart } from "./components";
 
 import "./Ordering.scss";
+import { ProductDetail } from "../../components";
 /**
  *
  */

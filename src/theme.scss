@@ -1,3 +1,5 @@
-:root {
-    --primary-color: #f90;
-}
+$color-brand: #ff9900;
+$color-brand-light: #ffb340;
+$color-brand-dark: #cc7a00;
+
+@import "~taro-ui/dist/style/index.scss";

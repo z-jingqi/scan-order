@@ -1,3 +1,5 @@
+$cart-height: 100px;
+
 .ordering-container {
   height: 100vh;
   overflow: hidden;
@@ -5,7 +7,7 @@
 
 .ordering-list {
   display: flex;
-  height: calc(100% - 100px);
+  height: calc(100% - $cart-height);
   overflow: hidden;
 }
 
@@ -21,7 +23,6 @@
   width: 20%;
   flex-shrink: 0;
   max-width: 150px;
-  border-right: 1px solid #ccc;
 }
 
 .ordering-product-list {
@@ -33,5 +34,5 @@
 }
 
 .shopping-cart {
-  height: 100px;
+  height: $cart-height;
 }
